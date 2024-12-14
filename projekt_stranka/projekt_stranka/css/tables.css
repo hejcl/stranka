@@ -1,0 +1,422 @@
+/* Celkový styl tabulky */
+.league-table-premier-league {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f7f7f7; /* světlý podklad */
+}
+
+/* Hlavička tabulky */
+.league-table-premier-league thead {
+    background-color: #37003c; /* tmavě fialová barva Premier League */
+    color: white;
+}
+
+.league-table-premier-league thead th {
+    padding: 12px 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #ddd;
+}
+
+/* Tělo tabulky */
+.league-table-premier-league tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.league-table-premier-league tbody tr:nth-child(even) {
+    background-color: #f1f1f1; /* střídání řádků */
+}
+
+.league-table-premier-league tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.league-table-premier-league tbody td {
+    padding: 10px 8px;
+    border: 1px solid #ddd;
+}
+
+/* Styl prvních 4 míst - top týmy */
+.league-table-premier-league tbody tr:nth-child(-n+4) {
+    background-color: #d1e7dd; /* světle zelená barva */
+    font-weight: bold;
+}
+
+/* Styl pro poslední 3 místa - sestup */
+.league-table-premier-league tbody tr:nth-last-child(-n+3) {
+    background-color: #f8d7da; /* světle červená barva */
+}
+
+/* Zvýraznění prvního místa */
+.league-table-premier-league tbody tr:first-child {
+    background-color: #c6f6d5; /* světlejší zelená */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Odkaz na tým (případně pokud přidáš později) */
+.league-table-premier-league tbody td a {
+    text-decoration: none;
+    color: #37003c;
+}
+
+.league-table-premier-league tbody td a:hover {
+    text-decoration: underline;
+}
+
+/* Mobilní styl */
+@media (max-width: 768px) {
+    .league-table-premier-league {
+        font-size: 14px;
+    }
+
+    .league-table-premier-league thead th {
+        padding: 8px;
+    }
+
+    .league-table-premier-league tbody td {
+        padding: 8px;
+    }
+}
+
+
+/* Celkový styl tabulky */
+.league-table-la-liga {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f9f9f9; /* světlý podklad */
+}
+
+/* Hlavička tabulky */
+.league-table-la-liga thead {
+    background-color: #ff6200; /* tmavě červená barva inspirovaná La Ligou */
+    color: white;
+}
+
+.league-table-la-liga thead th {
+    padding: 12px 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #ddd;
+}
+
+/* Tělo tabulky */
+.league-table-la-liga tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.league-table-la-liga tbody tr:nth-child(even) {
+    background-color: #f1f1f1; /* střídání řádků */
+}
+
+.league-table-la-liga tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.league-table-la-liga tbody td {
+    padding: 10px 8px;
+    border: 1px solid #ddd;
+}
+
+/* Styl prvních 4 míst - top týmy */
+.league-table-la-liga tbody tr:nth-child(-n+4) {
+    background-color: #d1e7dd; /* světle zelená barva */
+    font-weight: bold;
+}
+
+/* Styl pro poslední 3 místa - sestup */
+.league-table-la-liga tbody tr:nth-last-child(-n+3) {
+    background-color: #f8d7da; /* světle červená barva */
+}
+
+/* Zvýraznění prvního místa */
+.league-table-la-liga tbody tr:first-child {
+    background-color: #c6f6d5; /* světlejší zelená */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Odkaz na tým (případně pokud přidáš později) */
+.league-table-la-liga tbody td a {
+    text-decoration: none;
+    color: #a50044;
+}
+
+.league-table-la-liga tbody td a:hover {
+    text-decoration: underline;
+}
+
+/* Mobilní styl */
+@media (max-width: 768px) {
+    .league-table-la-liga {
+        font-size: 14px;
+    }
+
+    .league-table-la-liga thead th {
+        padding: 8px;
+    }
+
+    .league-table-la-liga tbody td {
+        padding: 8px;
+    }
+}
+
+
+/* Celkový styl tabulky */
+.league-table-serie-a {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f9f9f9; /* světlý podklad */
+}
+
+/* Hlavička tabulky */
+.league-table-serie-a thead {
+    background-color: #0077ff; /* tmavě zelená barva inspirovaná Serie A */
+    color: white;
+}
+
+.league-table-serie-a thead th {
+    padding: 12px 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #ddd;
+}
+
+/* Tělo tabulky */
+.league-table-serie-a tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.league-table-serie-a tbody tr:nth-child(even) {
+    background-color: #f1f1f1; /* střídání řádků */
+}
+
+.league-table-serie-a tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.league-table-serie-a tbody td {
+    padding: 10px 8px;
+    border: 1px solid #ddd;
+}
+
+/* Styl prvních 4 míst - top týmy */
+.league-table-serie-a tbody tr:nth-child(-n+4) {
+    background-color: #d1e7dd; /* světle zelená barva */
+    font-weight: bold;
+}
+
+/* Styl pro poslední 3 místa - sestup */
+.league-table-serie-a tbody tr:nth-last-child(-n+3) {
+    background-color: #f8d7da; /* světle červená barva */
+}
+
+/* Zvýraznění prvního místa */
+.league-table-serie-a tbody tr:first-child {
+    background-color: #c6f6d5; /* světlejší zelená */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Odkaz na tým (případně pokud přidáš později) */
+.league-table-serie-a tbody td a {
+    text-decoration: none;
+    color: #008d36;
+}
+
+.league-table-serie-a tbody td a:hover {
+    text-decoration: underline;
+}
+
+/* Mobilní styl */
+@media (max-width: 768px) {
+    .league-table-serie-a {
+        font-size: 14px;
+    }
+
+    .league-table-serie-a thead th {
+        padding: 8px;
+    }
+
+    .league-table-serie-a tbody td {
+        padding: 8px;
+    }
+}
+
+
+/* Celkový styl tabulky */
+.league-table-bundesliga {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f9f9f9; /* světlý podklad */
+}
+
+/* Hlavička tabulky */
+.league-table-bundesliga thead {
+    background-color: #cc0000; /* červená barva inspirovaná Bundesligou */
+    color: white;
+}
+
+.league-table-bundesliga thead th {
+    padding: 12px 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #ddd;
+}
+
+/* Tělo tabulky */
+.league-table-bundesliga tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.league-table-bundesliga tbody tr:nth-child(even) {
+    background-color: #f1f1f1; /* střídání řádků */
+}
+
+.league-table-bundesliga tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.league-table-bundesliga tbody td {
+    padding: 10px 8px;
+    border: 1px solid #ddd;
+}
+
+/* Styl prvních 4 míst - top týmy */
+.league-table-bundesliga tbody tr:nth-child(-n+4) {
+    background-color: #d1e7dd; /* světle zelená barva */
+    font-weight: bold;
+}
+
+/* Styl pro poslední 3 místa - sestup */
+.league-table-bundesliga tbody tr:nth-last-child(-n+3) {
+    background-color: #f8d7da; /* světle červená barva */
+}
+
+/* Zvýraznění prvního místa */
+.league-table-bundesliga tbody tr:first-child {
+    background-color: #c6f6d5; /* světlejší zelená */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Odkaz na tým (případně pokud přidáš později) */
+.league-table-bundesliga tbody td a {
+    text-decoration: none;
+    color: #cc0000;
+}
+
+.league-table-bundesliga tbody td a:hover {
+    text-decoration: underline;
+}
+
+/* Mobilní styl */
+@media (max-width: 768px) {
+    .league-table-bundesliga {
+        font-size: 14px;
+    }
+
+    .league-table-bundesliga thead th {
+        padding: 8px;
+    }
+
+    .league-table-bundesliga tbody td {
+        padding: 8px;
+    }
+}
+
+/* Celkový styl tabulky pro Ligue 1 */
+.league-table-ligue-1 {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f7f7f7; /* světlý podklad */
+}
+
+/* Hlavička tabulky */
+.league-table-ligue-1 thead {
+    background-color: #00013c; /* tmavě fialová barva pro Ligue 1 */
+    color: white;
+}
+
+.league-table-ligue-1 thead th {
+    padding: 12px 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #ddd;
+}
+
+/* Tělo tabulky */
+.league-table-ligue-1 tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.league-table-ligue-1 tbody tr:nth-child(even) {
+    background-color: #f1f1f1; /* střídání řádků */
+}
+
+.league-table-ligue-1 tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.league-table-ligue-1 tbody td {
+    padding: 10px 8px;
+    border: 1px solid #ddd;
+}
+
+/* Styl prvních 4 míst - top týmy */
+.league-table-ligue-1 tbody tr:nth-child(-n+4) {
+    background-color: #d1e7dd; /* světle zelená barva */
+    font-weight: bold;
+}
+
+/* Styl pro poslední 3 místa - sestup */
+.league-table-ligue-1 tbody tr:nth-last-child(-n+3) {
+    background-color: #f8d7da; /* světle červená barva */
+}
+
+/* Zvýraznění prvního místa */
+.league-table-ligue-1 tbody tr:first-child {
+    background-color: #c6f6d5; /* světlejší zelená */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Odkaz na tým (případně pokud přidáš později) */
+.league-table-ligue-1 tbody td a {
+    text-decoration: none;
+    color: #37003c;
+}
+
+.league-table-ligue-1 tbody td a:hover {
+    text-decoration: underline;
+}
+
+/* Mobilní styl */
+@media (max-width: 768px) {
+    .league-table-ligue-1 {
+        font-size: 14px;
+    }
+
+    .league-table-ligue-1 thead th {
+        padding: 8px;
+    }
+
+    .league-table-ligue-1 tbody td {
+        padding: 8px;
+    }
+}

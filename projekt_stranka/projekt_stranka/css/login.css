@@ -1,0 +1,119 @@
+/* Globální nastavení */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Kontejner formulářů */
+.form-container {
+    width: 100%;
+    max-width: 450px;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+.form-container:hover {
+    transform: scale(1.05);
+}
+
+/* Formulářové boxy */
+.form-box {
+    display: none;
+    flex-direction: column;
+}
+
+.form-box.active {
+    display: flex;
+}
+
+/* Hlavička formuláře */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+/* Styl formuláře */
+form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #bbb;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #fff;
+}
+
+/* Tlačítko */
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #ccc;
+    transform: translateY(-2px);
+}
+
+form button:active {
+    background-color: #bbb;
+    transform: translateY(0);
+}
+
+/* Odkazy */
+form p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+form a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+form a:hover {
+    color: #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Skrytí formuláře */
+.hidden {
+    display: none;
+}

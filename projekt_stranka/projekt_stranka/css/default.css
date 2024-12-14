@@ -1,0 +1,754 @@
+body {
+    font-family: "Sequel 100 Wide 95", serif;
+    margin: 0;
+    padding: 0;
+linear-gradient(50 deg, #2b2b2b, #1c1c1c);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background: url('https://img.freepik.com/premium-vector/seamless-pattern-football-symbols-gray-black_444390-1745.jpg') fixed;
+
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding : 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+nav a {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+/* Flexbox galerie */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin: 20px auto;
+}
+
+/* Tabulky */
+.quiz-table {
+    width: 100%;
+    margin: 20px auto;
+    font-size: 0.9rem;
+}
+
+/* Přizpůsobení polí a tlačítek */
+input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+}
+
+button {
+    width: auto;
+    max-width: 100%;
+}
+
+.custom-link {
+    color: #373737;
+    text-decoration: none;
+}
+
+.custom-link:hover, .custom-link:visited, .custom-link:active {
+    color: #333333;
+}
+
+.quiz-container {
+    margin: 20px auto;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.quiz-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-table th, .quiz-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.quiz-table th {
+    background-color: #000000;
+    color: white;
+}
+
+.player {
+    color: #555;
+    font-style: italic;
+}
+
+/* Styly pro hlavičku */
+header {
+    background-color: #000000;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.header-left {
+    position: absolute;
+    top: 10px; /* Odstup od horního okraje */
+    left: 20px; /* Odstup od levého okraje */
+    display: flex;
+    align-items: center; /* Zarovnání loga a textu na střed vertikálně */
+    gap: 10px; /* Mezera mezi logem a textem */
+}
+
+.header-logo {
+    margin: 15px;
+    height: 70px; /* Výška loga */
+}
+
+.header-text {
+    font-size: 1.5rem; /* Velikost textu */
+    text-transform: uppercase; /* Velká písmena */
+    font-family: 'Sequel 100 Wide 95', sans-serif;
+}
+
+/* Navigační menu */
+nav {
+    background-color: #373737;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    background-color: #242424;
+}
+
+/* Odstraní modrý efekt na odkazech v navigaci při najetí myší */
+nav a:hover {
+    color: #ffffff; /* Nastaví barvu textu na původní barvu */
+    text-decoration: none; /* Odstraní podtržení */
+}
+
+nav a:focus {
+    outline: none; /* Odstraní rámeček kolem odkazu při kliknutí */
+}
+
+footer a {
+    color: #000000; /* Barva odkazu */
+    text-decoration: none; /* Zrušení podtržení */
+}
+
+footer a:hover {
+    color: #000000; /* Barva při najetí myší */
+    text-decoration: underline; /* Podtržení při najetí myší */
+}
+
+footer a:visited {
+    color: rgb(255, 255, 255); /* Barva po navštívení */
+    text-decoration: none; /* Zrušení podtržení po navštívení */
+}
+
+p a {
+    color: rgb(51, 51, 51); /* Barva odkazu */
+    text-decoration: none; /* Zrušení podtržení */
+}
+
+p a:hover {
+    color: #ffffff; /* Barva při najetí myší */
+    text-decoration: underline; /* Podtržení při najetí myší */
+}
+
+p a:visited {
+    color: #000000; /* Barva po navštívení */
+    text-decoration: none; /* Zrušení podtržení po navštívení */
+}
+
+
+/* Sekce pro obsah stránky */
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+.football-field {
+
+    width: 100%; /* Ponechání šířky na 100% */
+    max-width: 2000px; /* Nastavení maximální šířky, aby byla tabulka přehledná */
+    margin: auto; /* Zarovnání na střed */
+    padding: 20px;
+    background: url('https://img.freepik.com/free-photo/white-paper-texture-background_23-2151025778.jpg') center/cover no-repeat,
+    linear-gradient(50deg, #ffffff, #ffffff);
+    background-blend-mode: overlay;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0 0 10px rgb(36, 36, 36);
+}
+
+.football-field::before {
+    content: '';
+    position: static;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+/* Styly pro tlačítka */
+button {
+    background-color: #000000; /* tmavě fialová barva */
+    color: white;
+    border: 2px solid #000000; /* rámeček odpovídající barvě pozadí */
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 8px; /* zaoblené rohy */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* přidání efektu transformace */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* jemný stín pro tlačítka */
+}
+
+/* Efekt při najetí myší */
+button:hover {
+    background-color: #ffffff; /* bílé pozadí při hoveru */
+    color: #000000; /* text v tmavě fialové */
+    border-color: #ffffff; /* rámeček bílý */
+    transform: translateY(-2px); /* lehké zvednutí tlačítka při hoveru */
+}
+
+/* Efekt při kliknutí */
+button:active {
+    transform: translateY(1px); /* tlačítko se lehce "stlačí" při kliknutí */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* zintenzivnění stínu při kliknutí */
+}
+
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Základní styling pro kontaktní seznam */
+.contact-item {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.contact-link {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.contact-icon {
+    font-size: 50px; /* Velikost ikon */
+    margin-bottom: 10px;
+}
+
+.contact-link p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Responzivita pro menší obrazovky */
+@media (max-width: 980px) {
+    .contact-item {
+        margin-bottom: 20px;
+    }
+}
+
+/* Styly pro container */
+.container {
+    display: flex;
+    align-items: center; /* Vertikální zarovnání obsahu */
+    justify-content: space-between; /* Vzdálenost mezi obrázkem a textem */
+    margin: 20px;
+}
+
+.gallery {
+    display: grid; /* Používáme CSS Grid */
+    grid-template-columns: repeat(3, 1fr); /* Tři sloupce stejné šířky */
+    gap: 20px; /* Mezera mezi obrázky */
+    margin: 20px; /* Okraje galerie */
+}
+
+.image-container-1 {
+    text-align: center; /* Zarovnání textu a obrázku na střed */
+}
+
+.image-container-1 img {
+    display: flex;
+    width: 100%; /* Obrázek se roztáhne na šířku kontejneru */
+    height: auto; /* Zachová poměr stran */
+    max-height: 500px; /* Maximální výška obrázku */
+    object-fit: contain; /* Přizpůsobí obsah obrázku bez oříznutí */
+    border-radius: 8px; /* Kulaté rohy */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Stín */
+}
+
+
+.image-container-2 p {
+    margin-top: 10px; /* Mezera mezi obrázkem a textem */
+    font-size: 16px; /* Velikost textu */
+    color: #333; /* Barva textu */
+}
+
+.image-container-2 {
+    text-align: center; /* Zarovnání textu a obrázku na střed */
+}
+
+.image-container-2 img {
+    display: flex;
+    width: 100%; /* Obrázek se roztáhne na šířku kontejneru */
+    height: auto; /* Zachová poměr stran */
+    max-height: 300px; /* Maximální výška obrázku */
+    object-fit: contain; /* Přizpůsobí obsah obrázku bez oříznutí */
+    border-radius: 8px; /* Kulaté rohy */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Stín */
+}
+
+
+.image-container-2 p {
+    margin-top: 10px; /* Mezera mezi obrázkem a textem */
+    font-size: 16px; /* Velikost textu */
+    color: #333; /* Barva textu */
+}
+
+/* Styl pro obrázek */
+.left .image {
+    width: 500px; /* Nastavení šířky obrázku */
+    height: auto; /* Nastavení výšky obrázku */
+}
+
+/* Styl pro pravý text */
+.right {
+    flex: 1; /* Text se roztáhne na zbývající místo */
+    margin-left: 20px; /* Trochu mezery mezi obrázkem a textem */
+}
+
+/* Styly pro nadpis a text */
+.right h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.right p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Styl ikony přihlášení */
+.login-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #0c0c0c; /* Černé pozadí */
+    border-radius: 50%; /* Zaoblené pozadí */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center; /* Vertikální vycentrování */
+    justify-content: center; /* Horizontální vycentrování */
+    cursor: pointer; /* Ruka jako kurzor */
+    transition: all 0.3s ease; /* Plynulá animace při hover */
+    box-sizing: border-box; /* Zamezení přetečení rámečku */
+}
+
+.login-icon a {
+    text-decoration: none;
+    color: #ffffff; /* Bílá barva ikony */
+    font-size: 22px;
+    display: inline-flex;
+    line-height: 0;
+    transition: color 0.3s ease; /* Animace barvy ikony */
+}
+
+.login-icon:hover {
+    background-color: #ffffff; /* Bílé pozadí při hover */
+    border-color: #ffffff; /* Rámeček zůstává bílý */
+}
+
+.login-icon:hover a {
+    color: #1c1c1c; /* Ikona zčerná při hover */
+}
+
+
+.search-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+#search-section {
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#search-button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #686868;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-icon {
+    position: absolute;
+    top: 20px;
+    right: 90px;
+    background-color: #000000; /* Černé pozadí */
+    border-radius: 50%; /* Zaoblené pozadí */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center; /* Vertikální vycentrování */
+    justify-content: center; /* Horizontální vycentrování */
+    cursor: pointer; /* Ruka jako kurzor */
+    transition: all 0.3s ease; /* Plynulá animace při hover */
+    box-sizing: border-box; /* Zamezení přetečení rámečku */
+}
+
+.search-icon a {
+    text-decoration: none;
+    color: #ffffff; /* Bílá barva ikony */
+    font-size: 22px;
+    display: inline-flex;
+    line-height: 0;
+    transition: color 0.3s ease; /* Animace barvy ikony */
+}
+
+.search-icon:hover {
+    background-color: #ffffff; /* Bílé pozadí při hover */
+    border-color: #000000; /* Rámeček zůstává bílý */
+}
+
+.search-icon:hover a {
+    color: #000000; /* Ikona zčerná při hover */
+}
+
+#search-results {
+    margin-top: 20px;
+}
+/* Nastaví výchozí barvu ikony na bílou */
+.search-icon {
+    color: white;
+    transition: color 0.3s ease; /* Přechod pro plynulou změnu barvy */
+}
+
+/* Když najedeš myší na ikonu, změní se barva na černou */
+.search-icon:hover {
+    color: black;
+}
+
+
+
+
+
+.versus {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.match-info {
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+}
+
+
+#unique-h2 {
+    font-size: 40px; /* Nastavení pro specifické h2 */
+}
+
+#white-h2 {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.contact-form {
+    background-color: #111; /* Tmavší pozadí pro lepší kontrast */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1700px; /* Maximální šířka pro lepší přehlednost */
+    margin: 0 auto; /* Horizontální centrování */
+    color: #fff; /* Bílé písmo pro lepší čitelnost */
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #222; /* Mírně tmavší pozadí pro inputy */
+    color: #fff; /* Bílé písmo v inputech */
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 150px; /* Vyšší textové pole pro zprávy */
+    resize: vertical; /* Možnost vertikálního zvětšení */
+}
+
+.contact-form button {
+    background-color: #393939; /* Zelené tlačítko pro akcent */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #6a6a6a; /* Ztmavnutí tlačítka při hoveru */
+}
+
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center; /* Volitelné - pokud chcete, aby byly labely také centrované */
+}
+
+
+input, textarea {
+    width: 100%; /* Zajistí, že všechny inputy budou mít šířku 100% */
+    padding: 10px;
+    margin: 10px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="text"], input[type="email"] {
+    height: 40px; /* Zajištění stejné výšky pro textové inputy */
+}
+
+textarea {
+    resize: vertical; /* Umožní vertikální změnu velikosti pro textarea */
+}
+footer {
+    clear: both; /* zajistí, že se footer posune pod všechny ostatní elementy */
+}
+
+.search-bar {
+    margin-top: 10px;
+}
+
+.highlight {
+    background-color: yellow;
+    text-decoration: underline;
+}
+
+
+/* Responzivní úpravy */
+@media (max-width: 980px) {
+    /* Uprav velikost textů a prostorů pro menší obrazovky */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        padding: 10px;
+    }
+
+    .quiz-table {
+        width: 100%;
+    }
+
+    .quiz-container {
+        margin: 10px;
+    }
+
+    input[type="text"] {
+        width: 100%; /* Zvětší input pro mobilní zařízení */
+        margin-right: 0;
+    }
+
+    button {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px 0;
+    }
+
+    .header-left {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .header-logo {
+        height: 40px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .football-field {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Změní počet sloupců v galerii */
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container-1 img {
+        width: 100%;
+        max-height: 200px;
+    }
+
+    .right h2 {
+        font-size: 20px;
+    }
+
+    .right p {
+        font-size: 14px;
+    }
+
+    .contact-item {
+        margin-bottom: 10px;
+    }
+
+    /* Zmenší tabulky na menších obrazovkách */
+    .league-table-premier-league, .league-table-la-liga, .league-table-serie-a, .league-table-bundesliga, .league-table-ligue-1 {
+        font-size: 14px;
+    }
+
+    .league-table-premier-league thead th, .league-table-la-liga thead th, .league-table-serie-a thead th, .league-table-bundesliga thead th, .league-table-ligue-1 thead th {
+        padding: 8px;
+    }
+
+    .league-table-premier-league tbody td, .league-table-la-liga tbody td, .league-table-serie-a tbody td, .league-table-bundesliga tbody td, .league-table-ligue-1 tbody td {
+        padding: 8px;
+    }
+}
+
+.content {
+    padding: 1rem 1rem;
+}
+
+
+/* Responzivní úpravy */
+@media (max-width: 1735px) {
+    .header-left {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        position: static; /* Umožňuje lepší zarovnání */
+        margin-bottom: 10px; /* Mezera pod logem */
+    }
+
+    .header-logo {
+        height: 40px; /* Menší výška loga */
+        margin: 0 auto; /* Centrované logo */
+    }
+
+    .header-text {
+        font-size: 1.2rem; /* Zmenšení velikosti textu */
+        text-align: center; /* Centrovaný text */
+        margin-top: 5px; /* Mezera nad textem */
+    }
+
+    .login-icon, .search-icon {
+        position: static;
+        margin: 10px auto;
+    }
+
+    .login-icon a, .search-icon a {
+        font-size: 18px;
+    }
+
+    .search-icon {
+        margin-top: 10px;
+    }
+}
+
